@@ -1,0 +1,424 @@
+/* general */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    padding: 10px 1px;
+    margin: auto;
+}
+
+section[id]{
+    scroll-margin-top: 70px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.titulo{
+    color:rgb(86, 24, 24);
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 60px;
+    width: 700px;
+    font-style:italic;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.boton{
+
+    width: 160px;
+    height: 40px;
+    align-self: center;
+    color: var(--white);
+    font-weight: 700 black;
+    border: transparent;
+    border-radius: 30px;
+    background: #5d4157; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #5d4157, #a8caba); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #5d4157, #a8caba); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/* header */
+.contenedor-cabecera{
+    background: #FC5C7D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    place-items: end;
+    padding-bottom: 0;
+    padding: 10px 125px;
+    gap: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+}
+
+li, ul, a{
+    text-decoration: none;
+}
+
+.lista-nav--header{
+    padding-left: 35px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    list-style: none;
+    font-style: normal;
+    font-size: larger;
+}
+
+.home, .about, .contact, .comments, .reco{
+    color: black;
+    background: #FC5C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6a82fb56, #fc5c7c52);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6a82fb43, #fc5c7c3f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.home:hover{
+    color: rgba(0, 0, 0, 0.375);
+    font-style: oblique;
+}
+.about:hover{
+    color: rgba(0, 0, 0, 0.375);
+    font-style: oblique;
+}
+.contact:hover{
+    color: rgba(0, 0, 0, 0.375);
+    font-style: oblique;
+}
+.comments:hover{
+    color: rgba(0, 0, 0, 0.181);
+    font-style: oblique;
+}
+.reco:hover{
+    color: rgba(0, 0, 0, 0.375);
+    font-style: oblique;
+}
+
+.boton-cabecera{
+    width: 160px;
+    height: 40px;
+    align-self: center;
+    color: var(--white);
+    font-weight: 700;
+    border: transparent;
+    border-radius: 30px;
+    background: #5d4157; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #5d4157, #a8caba); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #5d4157, #a8caba); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.boton-cabecera:hover{
+    opacity: 100;
+}
+
+.logo{
+    height: 45px;
+    width: 170px;
+    padding-bottom: 5px;
+}
+
+
+/* Contenedor de texto inicial */
+.texto-inicial{
+    background-color: rgba(202, 202, 202, 0.3);
+    display: flex;
+    padding-top: 70px;
+}
+
+.mosaico{ 
+    width: 500px;
+    text-align: right;
+    padding-left: 35px;
+   
+}
+
+.imagen-inicio{
+    width: 500px;
+    height: 400px;
+}
+
+.inicial{
+    text-align: left;
+    display: flow-root;
+    padding-left: 50px;
+    background-size: 400px;
+}
+
+.textm{
+   color: rgb(0, 0, 0);
+    font-size: 35px;
+    text-align: center;
+    padding-right: 25px;
+    padding-left: 15px;
+    background-color: rgba(127, 255, 212, 0.166);
+
+}
+
+.opcion{
+    background-color: #c66afb2d;
+}
+
+/* contenedor de recomendaciones */
+.recomendaciones{
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-blanco-lineas-onduladas_23-2149124447.jpg?w=996&t=st=1663978885~exp=1663979485~hmac=894a68e1a0a094cff0c883bdc2b870fc5ba5640497e4d5aed3a9d21dd75d1518);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px 0;
+}
+
+
+.contenedor-articulosauto{
+    max-width: 1200px;
+    margin: 0 0 0 125px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.recomendacioness{
+    padding-bottom: -100px;
+}
+.info-arti1{
+    width: 600px;
+    padding: 30px;
+    align-items: initial;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.info-arti1:hover{
+    background-color:rgba(197, 247, 197, 0.275);
+}
+
+.info-arti2{
+    width: 600px;
+    padding: 30px;
+    align-items: initial;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.info-arti2:hover{
+    background-color: rgba(0, 140, 255, 0.062);
+}
+
+.info-arti3{
+    width: 600px;
+    padding: 30px;
+    align-items: initial;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.info-arti3:hover{
+    background-color: rgba(1, 35, 1, 0.066);
+}
+
+.info-arti4{
+    width: 600px;
+    padding: 30px;
+    align-items: initial;
+    flex-direction: column;
+    gap: 70px;
+    
+}
+
+.info-arti4:hover{
+    background-color:rgba(255, 217, 0, 0.103);
+}
+
+.imagen-sobre{
+    max-width: 320px;
+    width: 95%;
+    align-self: center;
+    margin: 5px 0;
+    border-radius: 5px;
+    padding: 10px;
+} 
+
+.imagen-ssobre{
+    flex-direction: column-reverse;
+    width: 390px;
+    align-self: center;
+    margin: 5px 0;
+    border-radius: 5px;
+    padding-top: 28px;
+}
+
+.imagenn-sobre{
+    flex-direction: column-reverse;
+    width: 350px;
+    align-self: center;
+    margin: 5px 0;
+    border-radius: 5px;
+    padding-top: 28px;
+}
+
+.info-auto{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    gap: 10px;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.titulos{
+    padding-top: 20px;
+    color: rgb(142, 0, 0);
+    width: 110px;
+}
+
+.titulos:hover{
+    cursor: pointer;
+    font-size: 25px;
+    color: rgb(255, 10, 10);
+}
+
+.text{
+    font-size: x-large;
+    color: #000046;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 25px;
+    padding-bottom: 40px;
+}
+
+/* contenedor noticias */
+
+
+.contenedor-articulosnoti{
+    max-width: 1200px;
+    margin: 0 0 0 20px;
+    flex-direction: row;
+    display: flex;
+    gap: 30px;
+    margin: auto;
+
+}
+
+.contenedor-informacion{
+    align-items: initial;
+    gap: 70px;
+    text-align: left;
+}
+
+.imagen-noticia{
+    max-width: 320px;
+    width: 100%;
+    margin: 5px 0;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.escrito-por{
+    padding: 0;
+    font-size: x-small;
+    color: gray;
+}
+
+.texto-noticia{
+    width: 250;
+    padding-left: -20px;
+    font-size: 15px;
+}
+
+.contenedor-noti{
+    background-color: rgba(255, 228, 196, 0.404);
+    padding-bottom: 25px;
+    padding-left: 0%;
+    border-color: black;
+    box-shadow: black;
+}
+
+.titulosz{
+    width: 250px;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.imagen-noticiaa{
+    max-width: 320px;
+    width: 795px;
+    margin: 5px 0;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.contenedor-noti:hover{
+    cursor: pointer;
+    background-color: rgba(84, 48, 5, 0.249);
+    padding-top: 50px;
+    color: black;
+}
+
+/* contenedor de footer */
+.contenedor-contacto{
+    background: #FC5C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        place-items: end;
+        padding-bottom: 0;
+        padding: 10px 125px;
+        gap: 10px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+}
+
+.registro{
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.listaa-nav--header{
+    padding-left: 35px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    list-style: none;
+    font-style: normal;
+    font-size: larger;
+}
+
+.home:hover{
+    color: rgba(0, 0, 0, 0.375);
+    font-style: oblique;
+}
+.about:hover{
+    color: rgba(0, 0, 0, 0.375);
+    font-style: oblique;
+}
+.contact:hover{
+    color: rgba(0, 0, 0, 0.375);
+    font-style: oblique;
+}
+.comments:hover{
+    color: rgba(0, 0, 0, 0.181);
+    font-style: oblique;
+}
+.reco:hover{
+    color: rgba(0, 0, 0, 0.375);
+    font-style: oblique;
+}
+
+.all{
+    padding-top: 15px;
+}
+
+.boton-unete:hover{
+    opacity: 100;
+}
